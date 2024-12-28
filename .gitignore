@@ -300,7 +300,7 @@ fabric.properties
 
 ### PyCharm+all Patch ###
 # Ignore everything but code style settings and run configurations
-# that are supposed to be shared within teams.
+# that are supposed to be custom within teams.
 
 .idea/*
 
