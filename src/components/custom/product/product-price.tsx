@@ -4,11 +4,12 @@ export default function ProductPrice({
   value,
   className,
 }: {
-  value: number;
+  value: string;
   className?: string;
 }) {
-  const priceString = value.toFixed(2);
+  const priceString = Number(value).toFixed(2);
   const [integer, float] = priceString.split(".");
+
   return (
     <span className={cn("text-2xl", className)}>
       <span className="text-xs align-super">$</span>

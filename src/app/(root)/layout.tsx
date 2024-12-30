@@ -1,8 +1,6 @@
 import Header from "@/components/custom/header/header";
 import Footer from "@/components/custom/footer";
 
-9;
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
