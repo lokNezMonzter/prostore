@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductPrice from "@/components/custom/product/product-price";
 
+// will provide later
 export default function ProductCard({ product }: { product: any }) {
   return (
     <Card className="w-full max-w-sm">
