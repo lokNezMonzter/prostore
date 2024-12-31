@@ -1,10 +1,12 @@
 import ProductList from "@/components/custom/product/product-list";
-import sampleData from "@/mock/db/sample-data";
+import { getLatestProducts } from "@/actions/products";
 
 export default async function Home() {
+  const latestProducts = await getLatestProducts();
+
   return (
     <>
-      <ProductList data={sampleData.products} title="New Arrivals" />
+      <ProductList data={latestProducts} title="New Arrivals" />
     </>
   );
 }
