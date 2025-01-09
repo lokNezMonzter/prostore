@@ -4,3 +4,14 @@ export const APP_DESC =
   "An e-commerce website developed with Next 15 and React 19";
 export const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:3000";
+
+export const loginDefaultValues = {
+  email: "",
+  password: "",
+};
+
+export const registrationDefaultValues = {
+  name: "",
+  email: "",
+  password: "",
+};

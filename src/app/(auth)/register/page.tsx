@@ -2,15 +2,15 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import LoginForm from "@/app/(auth)/login/login-form";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import RegistrationForm from "@/app/(auth)/register/registration-form";
 
 export const metadata: Metadata = {
-  title: "Login",
+  title: "Register",
 };
 
-export default async function LoginPage(props: {
+export default async function RegisterPage(props: {
   searchParams: Promise<{
     callbackUrl: string;
   }>;
@@ -36,10 +36,10 @@ export default async function LoginPage(props: {
               priority={true}
             />
           </Link>
-          <CardTitle className="text-center">Sign In</CardTitle>
+          <CardTitle className="text-center">Register</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <LoginForm />
+          <RegistrationForm />
         </CardContent>
       </Card>
     </div>
