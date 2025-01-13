@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EllipsisVertical, ShoppingCart, UserIcon } from "lucide-react";
+import { EllipsisVertical, ShoppingCart } from "lucide-react";
 import ThemeToggle from "@/components/custom/header/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import UserButton from "@/components/custom/header/user-button";
 
 export default function Menu() {
   return (
@@ -20,11 +21,7 @@ export default function Menu() {
             <ShoppingCart /> Cart
           </Link>
         </Button>
-        <Button asChild>
-          <Link href="/login">
-            <UserIcon /> Login
-          </Link>
-        </Button>
+        <UserButton />
       </nav>
 
       <nav className="md:hidden">
@@ -40,11 +37,7 @@ export default function Menu() {
                 <ShoppingCart /> Cart
               </Link>
             </Button>
-            <Button asChild>
-              <Link href="/login">
-                <UserIcon /> Login
-              </Link>
-            </Button>
+            <UserButton />
             <SheetDescription></SheetDescription>
           </SheetContent>
         </Sheet>
